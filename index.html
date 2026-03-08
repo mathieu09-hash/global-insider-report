@@ -5,23 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Insider Report</title>
     <style>
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; background-color: #f0f2f5; color: #1c1e21; }
-        header { background-color: #cc0000; color: white; padding: 20px 0; text-align: center; border-bottom: 5px solid #a00000; }
-        .nav-bar { background: #333; color: white; padding: 10px; text-align: center; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; }
-        .container { max-width: 850px; margin: 20px auto; padding: 30px; background: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        .breaking-tag { background: #cc0000; color: white; padding: 5px 12px; font-weight: bold; text-transform: uppercase; display: inline-block; margin-bottom: 15px; font-size: 0.8rem; }
-        h1 { font-size: 2.2rem; line-height: 1.2; margin-top: 10px; color: #111; }
-        .meta-info { color: #65676b; font-size: 0.9rem; margin-bottom: 20px; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
-        .main-image { width: 100%; height: auto; border-radius: 4px; margin: 20px 0; }
-        .article-content { font-size: 1.1rem; line-height: 1.8; color: #333; }
-        p { margin-bottom: 1.5rem; }
+        /* Importation d'une police plus "Journal" pour les titres */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap');
+
+        body { 
+            font-family: 'Roboto', sans-serif; 
+            margin: 0; 
+            background-color: #f4f4f4; 
+            color: #222; 
+        }
+
+        /* En-tête stylisé avec ton logo */
+        header { 
+            background-color: #cc0000; 
+            color: white; 
+            padding: 25px 0; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 20px;
+            border-bottom: 6px solid #1a1a1a;
+        }
+
+        header img {
+            height: 70px;
+            width: auto;
+            /* Si ton logo est transparent, pas besoin de cercle blanc ici */
+        }
+
+        header h1 { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 3rem;
+            margin: 0; 
+            letter-spacing: -1px;
+            color: #ffffff;
+        }
+
+        .nav-bar { 
+            background: #1a1a1a; 
+            color: #ddd; 
+            padding: 12px; 
+            text-align: center; 
+            font-size: 0.85rem; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        /* Container plus élégant */
+        .container { 
+            max-width: 800px; 
+            margin: 40px auto; 
+            padding: 40px; 
+            background: white; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-radius: 2px;
+        }
+
+        .breaking-tag { 
+            background: #cc0000; 
+            color: white; 
+            padding: 4px 12px; 
+            font-weight: bold; 
+            font-size: 0.75rem;
+            display: inline-block; 
+            margin-bottom: 20px;
+        }
+
+        /* Titre de l'article plus imposant */
+        h2.article-title { 
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem; 
+            line-height: 1.1; 
+            margin: 10px 0 20px 0; 
+            color: #111; 
+        }
+
+        .meta-info { 
+            color: #888; 
+            font-size: 0.85rem; 
+            margin-bottom: 30px; 
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+            text-transform: uppercase;
+        }
+
+        .article-content { 
+            font-size: 1.15rem; 
+            line-height: 1.9; 
+            color: #333; 
+        }
+
+        /* Style de la première lettre (Lettrine) */
+        .article-content p:first-of-type::first-letter {
+            float: left;
+            font-size: 4rem;
+            line-height: 0.8;
+            padding-right: 10px;
+            padding-top: 4px;
+            color: #cc0000;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .main-image { 
+            width: 100%; 
+            height: auto; 
+            margin-top: 30px;
+            border-bottom: 3px solid #cc0000;
+        }
+
+        /* Pied de page */
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #999;
+        }
     </style>
 </head>
 <body>
 
 <header>
-     
-    <h1 style="margin: 0; color: black; font-family: Arial, sans-serif;">Global Insider Report</h1>
+    <img src="NOM-DE-TON-LOGO.png" alt="Logo">
+    <h1>Global Insider Report</h1>
 </header>
 
 <div class="nav-bar">
@@ -31,37 +138,28 @@
 <div class="container">
     <div class="breaking-tag">Exclusif</div>
     
-    <h1>Révélations : Le guide suprême iranien serait toujours en vie et localisé</h1>
+    <h2 class="article-title">Révélations : Le guide suprême iranien serait toujours en vie et localisé</h2>
     
     <div class="meta-info">
-        Par La Rédaction • Mis à jour le 8 Mars 2026
+        Par La Rédaction • Mis à jour le 8 Mars 2026 • Dossier n°402
     </div>
 
-   
     <div class="article-content">
         <p><strong>TÉHÉRAN -</strong> Selon plusieurs sources anonymes proches du pouvoir iranien, la mort du chef suprême annoncée récemment serait en réalité une mise en scène organisée par le gouvernement.</p>
         
         <p>Un ancien officier des Gardiens de la révolution, qui a accepté de parler sous couvert d'anonymat, affirme que le dirigeant aurait été transporté en hélicoptère dans une base militaire secrète près de la ville de Tabriz quelques heures avant l'annonce officielle de son décès.</p>
         
         <p><strong>Plusieurs éléments alimentent les doutes :</strong> une vidéo floue publiée sur les réseaux sociaux montrerait une silhouette ressemblant au leader iranien entrant dans un convoi militaire deux jours après l'annonce.</p>
-
-        <img src="file_000000005ba871f5b0ab859d9b8b2f1d.png" alt="" class="main-image">
-
         
         <p>Selon le docteur Reza Farhadi, un médecin iranien vivant en exil, le corps présenté lors des funérailles ne correspondrait pas à la taille réelle du dirigeant.</p>
 
-         <img src="IMG_20260308_151959.jpg" alt="" class="main-image">
-
+        <img src="image_2026-03-08_151246589.png" alt="" class="main-image">
     </div>
 </div>
 
+<footer>
+    &copy; 2026 Global Insider Report - Tous droits réservés.
+</footer>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
