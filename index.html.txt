@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Archives & Histoire - Média</title>
+    <style>
+        body { font-family: 'Georgia', serif; line-height: 1.6; margin: 0; background: #f4f4f4; }
+        header { background: #333; color: #fff; padding: 2rem; text-align: center; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 0 20px; }
+        .article-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+        article { background: white; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .sidebar { background: #e0e0e0; padding: 15px; }
+        img { max-width: 100%; height: auto; border-radius: 3px; }
+        .date { color: #777; font-style: italic; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>L'ÉCHO DU PASSÉ</h1>
+        <p>Le journal qui traverse les époques</p>
+    </header>
+
+    <div class="container">
+        <div class="article-grid">
+            <article>
+                <img src="https://via.placeholder.com/800x400" alt="Image historique">
+                <h2>Titre de ton article de presse</h2>
+                <p class="date">Publié le 14 Juillet 1789</p>
+                <p>C'est ici que tu rédigeras ton texte. Tu peux décrire les événements comme si tu y étais...</p>
+            </article>
+
+            <aside class="sidebar">
+                <h3>Images d'époque</h3>
+                <img src="https://via.placeholder.com/300x200" alt="Archives">
+                <p>Légende de l'image ou document d'archive.</p>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>
